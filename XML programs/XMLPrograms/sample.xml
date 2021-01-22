@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sample.xsl"?>
+<class>
+	<student>
+		<name>SURYA</name>
+		<dept>CSE</dept>
+	</student>
+	<student>
+		<name>KIRAN</name>
+		<dept>ECE</dept>
+	</student>
+</class>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a:focus,a:active{
+        color: green;
+    }
+</style>
+<script>
+    function focustxt(){
+        document.getElementById('txt').focus();
+    }
+    function blurtxt(){
+        document.getElementById('txt').blur();
+    }
+</script>
+<body>
+    <a href="https://www.kluniversity.in/" id="txt">KL UNIVERSITY</a><br><br>
+    <button onclick="focustxt()">FOCUS</button>&nbsp;&nbsp;
+    <button onclick="blurtxt()">BLUR</button>
+</body>
+</html>

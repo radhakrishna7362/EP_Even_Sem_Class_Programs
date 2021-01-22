@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee
+	xmlns:xsi='https://www.w3.org/2001/XMLSchema-instance'
+	xs:noNamespaceSchemaLocation='program3.xsd'>
+	<name>SURYA</name>
+</employee>

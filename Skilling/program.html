@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a,b,c,d,e;
+        // a=12*5;
+        // b="covid"+19;
+        // c=12*"5";
+        // d=12*"hello";
+        // e=19*"klu10";
+        // document.writeln(a+"<br>");
+        // document.writeln(b+"<br>");
+        // document.writeln(c+"<br>");
+        // document.writeln(d+"<br>");
+        // document.writeln(e+"<br>");
+// --------------------------------------------------------------------------------------
+        // document.writeln(parseInt("covid19")+"<br>")
+        // document.writeln(parseFloat("12.25abc")+"<br>")
+        // document.writeln(parseFloat("12.25")+"<br>")
+        // document.writeln(parseInt("19covid")+"<br>")
+// --------------------------------------------------------------------------------------
+        // var name;
+        // name=window.prompt("Enter Name");
+        // document.writeln("<h3>"+name+"</h3>");
+// --------------------------------------------------------------------------------------
+        // var name;
+        // name=window.prompt("Enter Name","klu");
+        // document.writeln("<h3>"+name+"</h3>");
+// --------------------------------------------------------------------------------------
+        // var a;
+        // a=parseInt(prompt("Enter value",0));
+        // document.writeln("<h3>"+a+"</h3>");
+// --------------------------------------------------------------------------------------
+        // var name;
+        // name=window.prompt("Enter Name");
+        // alert(name);
+// --------------------------------------------------------------------------------------
+
+        // html tags can't be applied to alert
+        // var name;
+        // name=window.prompt("Enter Name");
+        // alert("<h3>"+name+"</h3>");
+
+        // if(window.confirm("Did you like this session?")){
+        //     alert("Yes");
+        // }
+        // else{
+        //     alert("No 😥😥😥");
+        // } 
+// --------------------------------------------------------------------------------------
+        // var n;
+        // n=parseInt(prompt("Enter Value",0));
+        // if(n<0){
+        //     n=-n;
+        // }
+        // document.writeln(n)
+// --------------------------------------------------------------------------------------
+        // var n;
+        // n=parseInt(prompt("Enter Value",0));
+        // if(n%2==0){
+        //     alert("Even")
+        // }
+        // else{
+        //     alert("Odd");
+        // }
+// --------------------------------------------------------------------------------------
+        // var a,b;
+        // a=parseInt(prompt("Enter 1st number",0));
+        // b=parseInt(prompt("Enter 2nd number",0));
+        // if(a>b){
+        //     alert(a+" is big");
+        // }
+        // else{
+        //     alert(b+" is big");
+        // }
+// --------------------------------------------------------------------------------------
+        // var a,b,c;
+        // a=parseInt(prompt("Enter 1st number",0));
+        // b=parseInt(prompt("Enter 2nd number",0));
+        // c=parseInt(prompt("Enter 3rd number",0));
+        // if(a>b){
+        //     if(a>c){
+        //         alert(a+" is big")
+        //     }
+        //     else{
+        //         alert(c+ "is big")
+        //     }
+        // }
+        // else{
+        //     if(b>c){
+        //         alert(b+" is big");
+        //     }
+        //     else{
+        //         alert(c+" is big");
+        //     }
+        // }
+// --------------------------------------------------------------------------------------
+        // var a,b,c;
+        // a=parseInt(prompt("Enter 1st number",0));
+        // b=parseInt(prompt("Enter 2nd number",0));
+        // c=parseInt(prompt("Enter 3rd number",0));
+        // if(a>b && a>c){
+        //     alert(a+" is big");
+        // }
+        // else if(b>c){
+        //     alert(b+" is big");
+        // }
+        // else{
+        //     alert(c+" is big");
+        // }
+// --------------------------------------------------------------------------------------
+        // var n;
+        // n=parseInt(prompt("Enter n value",1));
+        // for(i=1;i<=n;i++){
+        //     document.writeln("<font color='red'>"+i+"</font>"+"<br>");
+        // }
+// --------------------------------------------------------------------------------------
+        // var n,i=1;
+        // n=parseInt(prompt("Enter n value",1));
+        // while(i<=n){
+        //     document.writeln(i+"<br>");
+        //     i=i+1;
+        // }
+// --------------------------------------------------------------------------------------
+        // var n,i=1;
+        // n=parseInt(prompt("Enter n value",1));
+        // do{
+        //     document.writeln(i+"<br>");
+        //     i=i+1;
+        // }while(i<=n)
+// --------------------------------------------------------------------------------------
+        // var n;
+        // n=parseInt(prompt("Enter n value",1));
+        // for(i=1;i<=n;i++){
+        //     if(i==10){
+        //         break;
+        //     }
+        //     document.writeln("<font color='red'>"+i+"</font>"+"<br>");
+        // }
+// --------------------------------------------------------------------------------------
+        // var n;
+        // n=parseInt(prompt("Enter n value",1));
+        // for(i=1;i<=n;i++){
+        //     if(i==10){
+        //         continue;
+        //     }
+        //     document.writeln("<font color='red'>"+i+"</font>"+"<br>");
+        // }
+// --------------------------------------------------------------------------------------
+        // var n;
+        // n=parseInt(prompt("Enter n value",1));
+        // for(i=1;i<=n;i++){
+        //     if(i%5==0){
+        //         document.writeln("RK"+"<br>");
+        //     }
+        //     else{
+        //         document.writeln("<font color='red'>"+i+"</font>"+"<br>");
+        //     }
+        // }
+// --------------------------------------------------------------------------------------
+        // var n;
+        // n=parseInt(prompt("Enter n value",1));
+        // document.writeln("<table border='1' style='border-collapse: collapse;'>")
+        //     for(i=1;i<=10;i++){
+        //         document.writeln("<tr>")
+        //             document.writeln("<td>")
+        //                 document.writeln(n+" * "+i+" = "+(n*i)+"<br>")
+        //             document.writeln("</td>")
+        //         document.writeln("</tr>")
+        //     }
+        // document.writeln("</table>")
+// --------------------------------------------------------------------------------------
+        // var a=new Array();
+
+        // var n;
+        // n=parseInt(prompt("Enter Array Size",3))
+        // for(i=0;i<n;i++){
+        //     a[i]=parseInt(prompt("Enter "+(i+1)+" Value"))
+        // }
+        // for(i=0;i<n;i++){
+        //     document.writeln(a[i]+"<br>")
+        // }
+// --------------------------------------------------------------------------------------
+        // var a=new Array();
+        // var avg,sum=0;
+        // var n;
+        // n=parseInt(prompt("Enter Array Size",3))
+        // for(i=0;i<n;i++){
+        //     a[i]=parseInt(prompt("Enter "+(i+1)+" Value"))
+        // }
+        // for(i=0;i<n;i++){
+        //     sum=sum+a[i];
+        // }
+        // avg=sum/n;
+        // document.writeln("<marquee bgcolor='red'>")
+        //     document.writeln("Average= "+avg+"<br>");
+        //     document.writeln("Sum= "+sum);
+        // document.writeln("</marquee>")
+// --------------------------------------------------------------------------------------
+        // var a=new Array(2);
+
+        // for(i=0;i<2;i++){
+        //     a[i]=new Array();
+        //     for(j=0;j<2;j++){
+        //         a[i][j]=parseInt(prompt("Enter matrix Element",0))
+        //     }
+        // }
+
+        // document.writeln("Given matrix"+"<br>")
+        // for(i=0;i<2;i++){
+        //     for(j=0;j<2;j++){
+        //         document.writeln(a[i][j]+" ");
+        //     }
+        //     document.writeln("<br>")
+        // }
+// --------------------------------------------------------------------------------------
+        // alert("1st matrix");
+        // var a=new Array(2);
+
+        // for(i=0;i<2;i++){
+        //     a[i]=new Array();
+        //     for(j=0;j<2;j++){
+        //         a[i][j]=parseInt(prompt("Enter matrix Element",0))
+        //     }
+        // }
+
+        // document.writeln("1st matrix"+"<br>")
+        // for(i=0;i<2;i++){
+        //     for(j=0;j<2;j++){
+        //         document.writeln(a[i][j]+" ");
+        //     }
+        //     document.writeln("<br>")
+        // }
+        
+        // alert("2nd Matrix");
+        // var b=new Array(2);
+
+        // for(i=0;i<2;i++){
+        //     b[i]=new Array();
+        //     for(j=0;j<2;j++){
+        //         b[i][j]=parseInt(prompt("Enter matrix Element",0))
+        //     }
+        // }
+
+        // document.writeln("2nd matrix"+"<br>")
+        // for(i=0;i<2;i++){
+        //     for(j=0;j<2;j++){
+        //         document.writeln(b[i][j]+" ");
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        // document.writeln("Addition of two matrices"+"<br>")
+        // for(i=0;i<2;i++){
+        //     for(j=0;j<2;j++){
+        //         document.writeln(a[i][j]+b[i][j]+" ");
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        // document.writeln("Subtraction of two matrices"+"<br>")
+        // for(i=0;i<2;i++){
+        //     for(j=0;j<2;j++){
+        //         document.writeln(a[i][j]-b[i][j]+" ");
+        //     }
+        //     document.writeln("<br>")
+        // }
+// --------------------------------------------------------------------------------------
+        // var a=new Array();
+
+        // var rows=parseInt(prompt("Enter no of rows",2))
+        // var columns=parseInt(prompt("Enter no of columns",2))
+
+        // for(i=0;i<rows;i++){
+        //     a[i]=new Array();
+        //     for(j=0;j<columns;j++){
+        //         a[i][j]=parseInt(prompt("Enter matrix Element",0))
+        //     }
+        // }
+
+        // for(i=0;i<rows;i++){
+        //     for(j=0;j<columns;j++){
+        //         document.writeln(a[i][j]+" ");
+        //     }
+        //     document.writeln("<br>")
+        // }
+// --------------------------------------------------------------------------------------
+
+        // var a=new Array(2);
+
+        // for(i=0;i<2;i++){
+        //     a[i]=new Array();
+        //     for(j=0;j<2;j++){
+        //         a[i][j]=parseInt(prompt("Enter matrix Element",0))
+        //     }
+        // }
+
+        // document.writeln("Given matrix"+"<br>")
+        // for(i=0;i<2;i++){
+        //     for(j=0;j<2;j++){
+        //         document.writeln(a[i][j]+" ");
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        // document.writeln("Transpose matrix"+"<br>")
+        // for(i=0;i<2;i++){
+        //     for(j=0;j<2;j++){
+        //         document.writeln(a[j][i]+" ");
+        //     }
+        //     document.writeln("<br>")
+        // }
+// --------------------------------------------------------------------------------------
+        // var a=new Array(2);
+
+        // for(i=0;i<2;i++){
+        //     a[i]=new Array();
+        //     for(j=0;j<2;j++){
+        //         a[i][j]=parseInt(prompt("Enter matrix Element",0))
+        //     }
+        // }
+
+        // document.writeln("Given matrix"+"<br>")
+        // for(i=0;i<2;i++){
+        //     for(j=0;j<2;j++){
+        //         document.writeln(a[i][j]+" ");
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        // var trace=0;
+        // for(i=0;i<2;i++){
+        //     trace=trace+a[i][i]
+        // }
+
+        // document.writeln("Trace= "+trace+"<br")
+// --------------------------------------------------------------------------------------
+        // function add(){
+        //     var x=10,y=20
+        //     document.writeln(x+y)
+        // }
+
+        // add()
+// --------------------------------------------------------------------------------------
+        // function add(x,y){
+        //     document.writeln(x+y);
+        // }
+
+        // add(10,20)
+// --------------------------------------------------------------------------------------
+        // function add(){
+        //     var x=10,y=20;
+        //     return x+y;
+        // }
+
+        // document.writeln(add())
+// --------------------------------------------------------------------------------------
+        // function add(x,y){
+        //     return x+y;
+        // }
+
+        // document.writeln(add(10,20));
+// --------------------------------------------------------------------------------------
+        // var n=parseInt(prompt("Enter a number",1));
+
+        // function factorial(n){
+        //     if(n<2)
+        //         return 1;
+        //     return n*factorial(n-1)
+        // }
+        
+        // document.writeln("factorial of "+n+" is "+factorial(n))
+// --------------------------------------------------------------------------------------
+        // var n=parseInt(prompt("Enter a value",3));
+        
+        // function fibinocci(n){
+        //     if(n<=1){
+        //         return n;
+        //     }
+        //     return fibinocci(n-1)+fibinocci(n-2);
+        // }
+
+        // document.writeln(fibinocci(n))
+// --------------------------------------------------------------------------------------
+        // document.writeln(Math.min(2,1,0)+"<br>")
+        // document.writeln(Math.max(2,1,0)+"<br>")
+        // document.writeln(Math.sqrt(2)+"<br>")
+        // document.writeln(Math.exp(1)+"<br>")
+        // document.writeln(Math.exp(2)+"<br>")
+        // document.writeln(Math.pow(3,2)+"<br>")
+        
+        // document.writeln(Math.round(6.5)+"<br>")
+        // document.writeln(Math.floor(5.2)+"<br>")
+        // document.writeln(Math.ceil(7.3)+"<br>")
+
+        // document.writeln(Math.log(10))
+        // document.writeln(Math.log10(10))
+        
+        // document.writeln(Math.PI+"<br>")
+        // document.writeln(Math.abs(-3)+"<br>")
+
+        // document.writeln(Math.round(Math.random()*999)+"<br>")
+// --------------------------------------------------------------------------------------
+        // var r_value=Math.round((Math.random()*999)%6)+1
+        // var input2=parseInt(prompt("Enter a value from 1-6"))
+        // if(r_value === input2){
+        //         document.writeln("Success")
+        // }
+        // else{
+        //         document.writeln("Fail")
+        // }
+// --------------------------------------------------------------------------------------
+        // var a=new Array(10,20,30,40,50)  // Static array with integer values
+        // var a=new Array("klu","klef","kl","covid") // Static array with string values
+        
+        // var n=parseInt(prompt("Enter the size of array"))
+        // var b=new Array()
+
+        // for(i=0;i<n;i++){
+        //         b[i]=prompt("Enter value")
+        // }
+
+        // for(i=0;i<b.length;i++){
+        //         document.writeln(b[i]+" ")
+        // }
+// --------------------------------------------------------------------------------------
+        // var n=parseInt(prompt("Enter the size of array"))
+        // var a=new Array()
+
+        // for(i=0;i<n;i++){
+        //         a[i]=prompt("Enter value")
+        // }
+
+        // document.writeln(a+"<br>")
+
+        // document.writeln("PUSH OPERATION<br>")
+        // a.push("covid19")
+        // document.writeln(a+"<br>")
+
+        // document.writeln("POP OPEARTION<br>")
+        // a.pop()
+        // document.writeln(a+"<br>")
+
+        // document.writeln("SORT OPERATION<br>")
+        // a.sort()
+        // document.writeln(a+"<br>")
+
+        // document.writeln("REVERSE OPERATION<br>")
+        // a.reverse()
+        // document.writeln(a+"<br>")
+// --------------------------------------------------------------------------------------
+    </script>
+</body>
+</html>

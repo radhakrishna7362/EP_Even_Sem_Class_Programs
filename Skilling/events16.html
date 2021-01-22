@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function valid(){
+        var dept=document.f.dept.value;
+        if(dept==""){
+            alert("Select Department");
+            return false;
+        }
+    }
+    function display(){
+        var dept=document.f.dept.value;
+        alert("You have Selected "+dept);
+    }
+</script>
+<body>
+    <form action="" name="f" onsubmit="return valid()" action="success.html" method="POST">
+        <select name="dept" onchange="display()">
+            <option value="">--Select--</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="ECM">ECM</option>
+        </select>
+        <br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

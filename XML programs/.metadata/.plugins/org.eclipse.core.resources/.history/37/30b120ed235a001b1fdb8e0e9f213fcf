@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="employee">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:int"></xs:element>
+				<xs:element name="name">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="5"></xs:length>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="gender" type="xs:string"></xs:element>
+				<xs:element name="salary">
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+							<xs:minInclusive value="10000.50"></xs:minInclusive>
+							<xs:maxExclusive value="40000.50"></xs:maxExclusive>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="dept">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="10"></xs:minLength>
+							<xs:maxLength value="20"></xs:maxLength>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="total">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:totalDigits value="4"></xs:totalDigits>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="qualification" type="xs:string" minOccurs="1" maxOccurs="2"></xs:element>
+				<xs:element name="demo">
+					<xs:simpleType>
+						<xs:restriction>
+							<xs:pattern value="[A-Za-z0-9]+"></xs:pattern>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

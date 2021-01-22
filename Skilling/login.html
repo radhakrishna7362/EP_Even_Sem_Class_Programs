@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function valid(){
+        var fname=document.getElementById("fname");
+        var pass=document.getElementById("password");
+        if(fname=="" && pass==""){
+            document.getElementById("errfname").innerHTML="You must Enter your name";
+            document.getElementById("errpassword").innerHTML="You must Enter your Password";
+            return false;
+        }
+        else if(fname=""){
+            document.getElementById("errfname").innerHTML="You must Enter your name";
+            return false;
+        }
+        else if(pass==""){
+            document.getElementById("errpassword").innerHTML="You must Enter your Password";
+            return false;
+        }
+    }
+</script>
+<body>
+    <form name="f" onsubmit="valid()" action="success.html" method="POST">
+        Enter Name:<input type="text" name="fname" id="fname"><i id="errfname" style="color: red;"></i><br>
+        Enter Password:<input type="password" name="password" id="password"><i id="errpassword" style="color: red;"></i><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

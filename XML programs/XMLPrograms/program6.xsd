@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="student">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="sid" type="xs:int"></xs:element>
+				<xs:element name="sname" type="xs:string"></xs:element>
+				<xs:element name="sinfo">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="dept" type="xs:string"/>
+							<xs:element name="year" type="xs:int"/>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

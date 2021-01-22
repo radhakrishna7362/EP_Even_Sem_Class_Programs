@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='program2.xsd'>
+	<id>4654</id>
+	<gender>male</gender>
+	<name>SURYA</name>
+</employee>

@@ -1,0 +1,13 @@
+
+<!ELEMENT employees (employee)+>
+<!ELEMENT employee (id+,name?,qualification*,designation)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT qualification (#PCDATA)>
+<!ELEMENT designation (#PCDATA)>
+<!ENTITY KLU "KLUNIVERSITY">
+<!--<!ATTLIST employee gender CDATA #IMPLIED>-->
+<!--<!ATTLIST employee gender CDATA #REQUIRED>-->
+<!--<!ATTLIST employee gender CDATA #FIXED "female">-->
+<!--<!ATTLIST employee gender (male|female) "male">-->
+<!ATTLIST employee gender (male|female) #REQUIRED>

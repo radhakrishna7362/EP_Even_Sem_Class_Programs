@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles.css"?>
+<employees>
+    <heading>Employee Records</heading>
+    <employee gender="male" location="kavali">
+        <id>190031187</id>
+        <name>RADHAKRISHNA</name>
+        <qualification>B.TECH</qualification>
+        <designation>STUDENT</designation>
+    </employee>
+    <employee gender="male">
+        <id>190031134</id>
+        <name>PAVAN RADHAKRISHNA</name>
+        <qualification>B.TECH</qualification>
+        <designation>STUDENT</designation>
+    </employee>
+    <employee gender="female">
+        <id>174N1A0584</id>
+        <name>KALYANI</name>
+        <qualification>B.TECH</qualification>
+        <designation>STUDENT</designation>
+    </employee>
+</employees>

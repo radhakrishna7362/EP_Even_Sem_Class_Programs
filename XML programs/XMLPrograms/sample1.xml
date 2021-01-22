@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sample1.xsl"?>
+<class>
+	<student>
+		<name sid="4654">SURYA</name>
+		<dept>CSE</dept>
+	</student>
+	<student>
+		<name sid="1234">KIRAN</name>
+		<dept>ECE</dept>
+	</student>
+</class>

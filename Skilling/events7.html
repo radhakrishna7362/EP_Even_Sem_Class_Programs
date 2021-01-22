@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=3, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="txt">K L University</h1><br>
+    <input type="color" name="color" id="color"><br>
+    <input type="button" value="Change" onclick="changetxtcolor()">
+</body>
+<script>
+    function changetxtcolor(){
+        document.getElementById("txt").style.color=document.getElementById("color").value
+    }
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center" width="400px" height="200px" border="3">
+        <tr align="center">
+            <td bgcolor="red" onmouseover="changebgcolor('red')" onmouseout="changebgcolor('black')">KLU</td>
+            <td bgcolor="green" onmouseover="changebgcolor('green')" onmouseout="changebgcolor('black')">KLEF</td>
+            <td bgcolor="orange" onmouseover="changebgcolor('orange')" onmouseout="changebgcolor('black')">CSE</td>
+        </tr>
+    </table>
+    <br>
+    <h3 id="txt" align="center">Enterprise Programming</h3>
+</body>
+<script>
+    function changebgcolor(clr){
+        document.getElementById("txt").style.color=clr
+    }
+</script>
+</html>
