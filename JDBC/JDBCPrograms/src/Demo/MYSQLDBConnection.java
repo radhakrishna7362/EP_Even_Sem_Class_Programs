@@ -11,6 +11,7 @@ public class MYSQLDBConnection {
 			System.out.println("Drive Class Loaded");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc", "root", "190031187");
 			System.out.println("Connection Established");
+			con.close();
 		}
 		catch(Exception e) {
 			System.out.println(e);

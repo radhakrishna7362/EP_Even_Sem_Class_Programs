@@ -27,7 +27,7 @@ public class InsertRecords {
 			salary=s.nextDouble();
 			System.out.println("Enter Employee Gender:");
 			gender=s.next();
-			
+			s.close();
 			PreparedStatement pstmt= con.prepareStatement("insert into employee values(?,?,?,?)");
 			pstmt.setInt(1, eid);
 			pstmt.setString(2, ename);

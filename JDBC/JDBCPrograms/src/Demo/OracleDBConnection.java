@@ -9,6 +9,7 @@ public class OracleDBConnection {
 			System.out.println("Drive Class Loaded");
 			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "SYSTEM", "190031187");
 			System.out.println("Connection Established");
+			con.close();
 		}
 		catch(Exception e) {
 			System.out.println(e);
