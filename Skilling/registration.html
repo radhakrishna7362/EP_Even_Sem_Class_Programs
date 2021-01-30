@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EP Skilling Project</title>
+	<script>
+		function validatefname(){
+			var fname = document.f.fname.value
+			if(fname.length==0){
+				document.getElementById('fnameerr').innerHTML = "Please Enter Full Name"
+				document.getElementById('fnameerr').style.color = "green"
+				document.getElementById("fname").focus()
+			}
+			else{
+				document.getElementById('fnameerr').innerHTML = ""
+			}
+		}
+
+		function validategender(){
+			var gender = document.f.gender.value
+			if(gender.length==0)
+			{
+				document.getElementById('gendererr').innerHTML = "Select Gender"
+				document.getElementById('gendererr').style.color = "green"
+				document.getElementById("gender").focus()
+			}
+			else{
+				document.getElementById('gendererr').innerHTML = ""
+			}
+		}
+		
+		// function valid()
+		// {
+		// 	var fname = document.f.fname.value
+		// 	var gender = document.f.gender.value
+		// 	var email = document.f.email.value
+		// 	var pwd = document.f.pwd.value
+		// 	var cpwd = document.f.cpwd.value
+		// 	var contact = document.f.contact.value
+		// 	var loc = document.f.loc.value
+		// 	var agegroup = document.f.agegroup.value
+		// 	var address = document.f.address.value
+
+		// 	if(fname.length==0)
+		// 	{
+		// 		document.getElementById('fnameerr').innerHTML = "Please Enter Full Name"
+		// 		document.getElementById("fname").focus()
+		// 		return false;
+		// 	}
+		// 	if(gender.length==0)
+		// 	{
+		// 		document.getElementById('gendererr').innerHTML = "Select Gender"
+		// 		document.getElementById("gender").focus()
+		// 		return false;
+		// 	}
+		// 	if(email.length==0)
+		// 	{
+		// 		document.getElementById('emailerr').innerHTML = "Please Enter Email Address"
+		// 		document.getElementById("email").focus()
+		// 		return false;
+		// 	}
+		// 	if(pwd.length==0)
+		// 	{
+		// 		document.getElementById('pwderr').innerHTML = "Please Enter Password"
+		// 		document.getElementById("pwd").focus()
+		// 		return false;
+		// 	}
+		// 	if(pwd!=cpwd)
+		// 	{
+		// 		document.getElementById('cpwderr').innerHTML = "Passwords doesn't match"
+		// 		document.getElementById("cpwd").focus()
+		// 		return false;
+		// 	}
+		// 	if(contact.length==0)
+		// 	{
+		// 		document.getElementById('contacterr').innerHTML = "Please Enter Contact Number"
+		// 		document.getElementById("contact").focus()
+		// 		return false;
+		// 	}
+		// 	if(loc.length==0)
+		// 	{
+		// 		document.getElementById('locerr').innerHTML = "Please Enter Location"
+		// 		document.getElementById("loc").focus()
+		// 		return false;
+		// 	}
+		// 	if(agegroup.length==0)
+		// 	{
+		// 		document.getElementById('agegrouperr').innerHTML = "Please Enter Age"
+		// 		document.getElementById("agegroup").focus()
+		// 		return false;
+		// 	}
+		// 	if(address.length==0)
+		// 	{
+		// 		document.getElementById('addresserr').innerHTML = "Please Enter Address"
+		// 		document.getElementById("address").focus()
+		// 		return false;
+		// 	}
+		// }
+	</script>
+</head>
+<body bgcolor="cyan">
+	<h2 align=center>User Registration</h2><br>
+	<form name="f" action="success.html" method="post" onsubmit="return valid()">
+		<table align=center>
+			<tr>
+				<td>Full Name</td>
+				<td><input type="text" name="fname" id="fname" onblur="validatefname()"><i style="color:red" id="fnameerr"></i></td>
+			</tr>
+
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+
+			<tr>
+				<td>Gender</td>
+				<td>
+					Male&nbsp;&nbsp;<input type="radio" name="gender" id="gender" value="male">
+					Female&nbsp;&nbsp;<input type="radio" name="gender" id="gender" value="female">
+					<i style="color:red" id="gendererr"></i>
+				</td>
+			</tr>
+
+
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+
+			<tr>
+				<td>Email Address</td>
+				<td>
+					<input type="text" name="email" id="email"><i style="color:red" id="emailerr"></i>
+				</td>
+			</tr>
+
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+
+			<tr>
+				<td>Password</td>
+				<td>
+					<input type="pwd" name="pwd" id="pwd"><i style="color:red" id="pwderr"></i>
+				</td>
+			</tr>
+
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+
+			<tr>
+				<td>Confirm Password</td>
+				<td>
+					<input type="pwd" name="cpwd" id="cpwd"><i style="color:red" id="cpwderr"></i>
+				</td>
+			</tr>
+
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+
+			<tr>
+				<td>Contact Number</td>
+				<td>
+					<input type="text" name="contact" id="contact"><i style="color:red" id="contacterr"></i>
+				</td>
+			</tr>
+
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+
+			<tr>
+				<td>Location</td>
+				<td>
+					<input type="text" name="loc" id="loc"><i style="color:red" id="locerr"></i>
+				</td>
+			</tr>
+
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+
+			<tr>
+				<td>Age</td>
+				<td>
+					<select name="agegroup" id="agegroup">
+						<option value="">---Select---</option>
+						<option value="<18"><18</option>
+						<option value=">=18 and <30">>=18 and <30</option>
+						<option value=">=30 and <40">>=30 and <40</option>
+						<option value=">=40">>=40</option>
+					</select>
+					<i style="color:red" id="agegrouperr"></i>
+				</td>
+			</tr>
+
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+
+			<tr>
+				<td>Address</td>
+				<td>
+					<textarea name="address" id="address"></textarea>
+					<i style="color:red" id="addresserr"></i>
+				</td>
+			</tr>
+
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+
+			<tr>
+				<td align=center><input type="submit" value="Register"></td>
+				<td align=center><input type="reset" value="Clear"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Events</title>
+</head>
+<script>
+    function change(){
+        document.getElementById("txt").innerHTML="Koneru Lakshmaiah Education Foundation";
+        document.getElementById("txt").style.color="white";
+        document.getElementById("txt").style.fontSize="30pt";
+        document.getElementById("txt").style.backgroundColor="green";
+        document.getElementById("txt").style.textAlign="center"
+    }
+</script>
+<body>
+    <p id="txt">K L University</p>
+    <input onclick="change()" type="button" value="change">
+</body>
+</html>
