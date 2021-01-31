@@ -32,16 +32,11 @@ public class Program1 {
 //			cstmt.execute();
 //			System.out.println("Name= "+cstmt.getString(2));
 			
-//			CallableStatement cstmt= con.prepareCall("{call updaterecord(?,?)}");
-//			cstmt.setInt(1, 1);
-//			cstmt.setString(2, "krishna");
-//			cstmt.execute();
-//			System.out.println("Record is Updated");
-			
-			CallableStatement cstmt= con.prepareCall("{call deleterecord(?)}");
-			cstmt.setInt(1, 2);
+			CallableStatement cstmt= con.prepareCall("{call updaterecord(?,?)}");
+			cstmt.setInt(1, 1);
+			cstmt.setString(2, "krishna");
 			cstmt.execute();
-			System.out.println("Record is Deleted");
+			System.out.println("Record is Updated");
 		}
 		catch(Exception e) {
 			System.out.println(e);
