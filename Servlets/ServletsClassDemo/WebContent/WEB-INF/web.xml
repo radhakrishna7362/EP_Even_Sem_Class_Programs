@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee">
+  <servlet>
+    <servlet-name>first</servlet-name>
+    <servlet-class>MyFirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>first</servlet-name>
+    <url-pattern>/first-demo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>second</servlet-name>
+    <servlet-class>MySecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>second</servlet-name>
+    <url-pattern>/second-demo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>third</servlet-name>
+    <servlet-class>MyThirdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>third</servlet-name>
+    <url-pattern>/third-demo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>demo</servlet-name>
+    <servlet-class>DemoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>demo</servlet-name>
+    <url-pattern>/demo</url-pattern>
+  </servlet-mapping>
+</web-app>
