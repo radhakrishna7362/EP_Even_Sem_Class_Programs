@@ -4,6 +4,7 @@ import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,19 +16,18 @@ public class UserHomeServlet extends HttpServlet{
 		res.setContentType("text/html");
 		PrintWriter out=res.getWriter();
 		
-		HttpSession session =req.getSession(false);
-		
-		if(session != null) {
-			String uname=(String)session.getAttribute("uname");
-			out.println("<h2 align='center'>User Home Page</h2><br>");
-			out.println(session.getId()+"<br>");
-			out.println("<b>Welcome </b>"+uname+"<br>");
+		Cookie[] cks = req.getCookies();
+		if(cks!=null) {
+			String uname = cks[0].getValue();
 			
-			RequestDispatcher rd=req.getRequestDispatcher("userhome.html");
+			out.println("<h2 align='center'>User Home Page</h2><br>");
+			out.println("<b>Welcome </b>"+uname+"<br><br>");
+			
+			RequestDispatcher rd= req.getRequestDispatcher("userhome.html");
 			rd.include(req, res);
 		}
 		else {
-			out.println("<h2 align='center'>Session Expired</h2><br>");
+			out.println("<h2 align='center'>Cookies Expired!!!<br></h2>");
 			RequestDispatcher rd=req.getRequestDispatcher("login.html");
 			rd.include(req, res);
 		}
