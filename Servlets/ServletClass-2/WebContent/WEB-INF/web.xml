@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <context-param>
+    <param-name>dept</param-name>
+    <param-value>cse</param-value>
+  </context-param>
+  <context-param>
+    <param-name>university</param-name>
+    <param-value>klu</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>initcontextparam</servlet-name>
+    <servlet-class>InitContextParamsDemo</servlet-class>
+    <init-param>
+      <param-name>id</param-name>
+      <param-value>4654</param-value>
+    </init-param>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>klu</param-value>
+    </init-param>
+    <init-param>
+      <param-name>gender</param-name>
+      <param-value>male</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>initcontextparam</servlet-name>
+    <url-pattern>/params</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>demoservlet</servlet-name>
+    <servlet-class>DemoServlet</servlet-class>
+    <init-param>
+      <param-name>designation</param-name>
+      <param-value>professor</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>demoservlet</servlet-name>
+    <url-pattern>/demo</url-pattern>
+  </servlet-mapping>
+</web-app>

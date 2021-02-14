@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Validation</title>
+<script>
+	function validate(){
+		var uname=document.f.uname.value;
+		var pwd=document.f.pwd.value;
+		if(uname.length==0){
+			alert("Username Should be Required"));
+			document.f.uname.focus();
+			return false;
+		}
+		
+		if(pwd.length==0){
+			alert("Password Should be Required");
+			document.f.pwd.focus();
+			return false;
+		}
+	}
+</script>
+</head>
+<body bgcolor="lightblue">
+	<center>
+		<form name="f" action="logincheck" method="post" onsubmit="return validate()">
+			<input type="text" name="uname" placeholder="Enter Username"><br><br>
+			<input type="password" name="pwd" placeholder="Enter Password"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</center>
+</body>
+</html>
